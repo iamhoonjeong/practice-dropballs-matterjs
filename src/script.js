@@ -1,72 +1,3 @@
-/* Matter.Events.on(mouseConstraint, 'mousedown', function (event) {
-  World.add(
-    engine.world,
-    Bodies.circle(150, -100, size, {
-      restitution: 0.8,
-      render: {
-        sprite: {
-          texture: '/src/img/red.svg',
-        },
-      },
-    }),
-  );
-  World.add(
-    engine.world,
-    Bodies.circle(150, -100, size, {
-      restitution: 0.8,
-      render: {
-        sprite: {
-          texture: '/src/img/gray.svg',
-        },
-      },
-    }),
-  );
-  World.add(
-    engine.world,
-    Bodies.circle(150, -100, size, {
-      restitution: 0.8,
-      render: {
-        sprite: {
-          texture: '/src/img/green.svg',
-        },
-      },
-    }),
-  );
-  World.add(
-    engine.world,
-    Bodies.circle(150, -100, size, {
-      restitution: 0.8,
-      render: {
-        sprite: {
-          texture: '/src/img/yellow.svg',
-        },
-      },
-    }),
-  );
-  World.add(
-    engine.world,
-    Bodies.circle(150, -100, size, {
-      restitution: 0.8,
-      render: {
-        sprite: {
-          texture: '/src/img/red.svg',
-        },
-      },
-    }),
-  );
-});
-World.add(engine.world, mouseConstraint);
-let mouse = Mouse.create(render.canvas);
-let mouseConstraint = MouseConstraint.create(engine, {
-  mouse: mouse,
-  constraint: {
-    stiffness: 0.2,
-    render: {
-      visible: false,
-    },
-  },
-}); */
-
 let Engine = Matter.Engine;
 let Render = Matter.Render;
 let World = Matter.World;
@@ -98,7 +29,7 @@ let render = Render.create({
   options: {
     width: document.body.clientWidth * pixedRatio, // 캔버스 넓이
     height: height * pixedRatio, // 캔버스 높이
-    wireframes: false, // 와이어프레임 비활성화
+    wireframes: true, // 와이어프레임 비활성화
     background: '#007561', // 캔버스 백그라운드 컬러
   },
 });
